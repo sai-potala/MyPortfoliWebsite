@@ -11,6 +11,8 @@ import L_ProductHuntClone from "../../assets/img/projects/product_hunt_clone.web
 import L_PortfolioUsingDjango from "../../assets/img/projects/portfolioUsingDjango.webp";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
+import mongoDb from "../../assets/img/skills/mongodb.svg";
+import shopNonStop from "../../assets/img/projects/shop-non-stop.JPG";
 
 // skills
 import L_REACT from "../../assets/img/skills/react.svg";
@@ -37,13 +39,13 @@ const TimeLine = () => {
       <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
       <Timeline>
         <Events>
-        {/* Project: Todo List With MUI */}
-        <ImageEvent
+          {/* Project: Todo List With MUI */}
+          <ImageEvent
             date="01/10/2020"
             className="text-center"
-            text="React ToDo App"
-            src={L_ReactToDoList}
-            alt="React ToDo App"
+            text="Shop-Non-Stop(E-Commerce App)"
+            src={shopNonStop}
+            alt="Shop-Non-Stop(E-Commerce App)"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -59,13 +61,36 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This is a Todo App created with React and Material UI that keeps a track of your Todos
+                        <strong>Description:</strong> This is a E-Commerce App
+                        created with React in Frontend and NodeJs in Backend and
+                        MongoDB for database.this App has all functionalites of
+                        an E-Commerce Website
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Keeps track of your Todos</li>
-                          <li>Powered by React and Material UI</li>
-                          <li>Respoisive Design</li>
+                          <li>Register new user</li>
+                          <li>Signin exiting user</li>
+                          <li>
+                            Seperate accounts for Users , Sellers , Admins
+                          </li>
+                          <li>
+                            Powered by React , NodeJs , MongoDB ,Express , Redux{" "}
+                          </li>
+                          <li>
+                            Users can Add products to cart , Place Orders , View
+                            Placed Orders , Make Payment{" "}
+                          </li>
+                          <li>
+                            Sellers can Add products , View orders placed to
+                            their products , Update Delivery Status{" "}
+                          </li>
+                          <li>
+                            Admin Can Add , Remove and Edit the Rights of Users
+                            and Sellers , Admin can also delete , modify and
+                            view all products{" "}
+                          </li>
+                          <li>Pay Pal integration is done for Payment </li>
+                          <li>Responsive Design</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -106,15 +131,47 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_MATERIALUI}
-                                alt="Material-UI"
+                                src={L_NODE_JS}
+                                alt="NodeJs"
                                 rounded
                                 className="image-style1 m-1"
                               ></Image>{" "}
-                              Material-UI
+                              NodeJs
                             </span>
                           </li>
-                          
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={mongoDb}
+                                alt="MongoDb"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              MongoDb
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_EXPRESS}
+                                alt="Express"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Express
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REDUX}
+                                alt="Redux"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Redux
+                            </span>
+                          </li>
                         </ul>
                       </Card.Body>
                     </Accordion.Collapse>
@@ -123,19 +180,19 @@ const TimeLine = () => {
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
                 <UrlButton
-                  href="https://akjha96.github.io/Todo-List-React/"
+                  href="https://my-shopnonstopfinal-app.herokuapp.com/"
                   target="_blank"
                 >
                   SEE LIVE
                 </UrlButton>
                 <UrlButton
-                  href="https://github.com/akjha96/Todo-List-React"
+                  href="https://github.com/attainu/fullstack-project-saivenkatabhaskarateja-potala-au9/tree/dev"
                   target="_blank"
                 >
                   SOURCE CODE
                 </UrlButton>
                 <UrlButton
-                  href="https://www.linkedin.com/posts/anand-kumar-jha-745798a4_react-materialui-fun-activity-6716765686963826688-GIpZ"
+                  href="https://drive.google.com/file/d/1RQ1yKFg3m2wEre0EyygauxyaaE5Mo_8k/view"
                   target="_blank"
                 >
                   WATCH VIDEO
@@ -144,14 +201,13 @@ const TimeLine = () => {
             </div>
           </ImageEvent>
 
-
-{/* Project: MERN Tip Calculator */}
-<ImageEvent
+          {/* Project: Hotel Booking App */}
+          <ImageEvent
             date="16/09/2020"
             className="text-center"
-            text="MERN Tip Calculator"
+            text="Hotel Book App"
             src={L_MernTipCalc}
-            alt="MERN Tip Calculator"
+            alt="Hotel Book App"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -167,14 +223,18 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This app calculates Tip for the amount entered and percentage of tip to be given.
-                        It uses MERN stack build to acomplish the same.
+                        <strong>Description:</strong> This app lets Users to
+                        Choose Hotels based on Categories and Filter them based
+                        on Price , Location and finally place a Booking.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Enter amount upto your desire</li>
+                          <li>
+                            Hotel selection based on Price , Location , Purpose
+                            of Stay
+                          </li>
                           <li>Real-time API calls with Backend features</li>
-                          <li>Styled with  Material-UI</li>
+                          <li>Styled with BootStrap</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -226,12 +286,12 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_MATERIALUI}
-                                alt="Material-UI"
+                                src={L_BOOTSTRAP4}
+                                alt="BootStrap"
                                 rounded
                                 className="image-style1 m-1"
                               ></Image>{" "}
-                              Material-UI
+                              BootStrap
                             </span>
                           </li>
                         </ul>
@@ -257,11 +317,11 @@ const TimeLine = () => {
             </div>
           </ImageEvent>
 
-          {/* Project: Get GitHub Info */}
+          {/* Project: Form-Generator */}
           <ImageEvent
             date="19/07/2020"
             className="text-center"
-            text="Get GitHub Info"
+            text="Form-Generator (Similar to GoogleForms)"
             src={L_GetGitHubInfo}
             alt="Get GitHub Info"
           >
@@ -279,14 +339,27 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> An app that searches
-                        people on GitHub with non-private account and see all
-                        their details using GitHub API
+                        <strong>Description:</strong> An app that lets Users to
+                        Create ,Share the Forms.Users Can also Download the
+                        uploaded Form data in .csv Format.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Search any Github profile</li>
-                          <li>Real-time API calls</li>
+                          <li>Register new user</li>
+                          <li>Signin exiting user</li>
+                          <li>
+                            Create Form and Share Link to anyone. Anyone with
+                            Link can fill the Form and submit the Format
+                          </li>
+                          <li>Users can Delete , Modify the Form</li>
+                          <li>
+                            Users can download the Form Data in .csv Format
+                          </li>
+                          <li>
+                            Users have seperate Profile Page Where they can
+                            update their Profile-photo , email address ,
+                            password.
+                          </li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -327,12 +400,23 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_GIT}
+                                src={L_MATERIALUI}
                                 alt="Github API"
                                 rounded
                                 className="image-style1 m-1"
+                              ></Image>
+                              Material UI
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_NODE_JS}
+                                alt="Node.js"
+                                rounded
+                                className="image-style1 m-1"
                               ></Image>{" "}
-                              GitHub API
+                              Node.js
                             </span>
                           </li>
                         </ul>
